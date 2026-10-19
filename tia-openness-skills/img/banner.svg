@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="TIA Openness skills for Claude Code">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1a2b"/>
+      <stop offset="1" stop-color="#0f3550"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" rx="16" fill="url(#bg)"/>
+  <text x="60" y="120" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff">TIA Openness <tspan fill="#5cc8ff">skills</tspan></text>
+  <text x="60" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#b9d3e6">Read, compare and safely edit TIA Portal projects with Claude Code</text>
+  <g font-family="Consolas, monospace" font-size="18" fill="#d8ecfa">
+    <rect x="60" y="205" width="150" height="44" rx="8" fill="#16486b"/><text x="80" y="234">.ap20 / .zap</text>
+    <text x="222" y="234" fill="#5cc8ff">&#8594;</text>
+    <rect x="250" y="205" width="140" height="44" rx="8" fill="#16486b"/><text x="268" y="234">Openness</text>
+    <text x="402" y="234" fill="#5cc8ff">&#8594;</text>
+    <rect x="430" y="205" width="170" height="44" rx="8" fill="#16486b"/><text x="448" y="234">SCL · LAD · tags</text>
+    <text x="612" y="234" fill="#5cc8ff">&#8594;</text>
+    <rect x="640" y="205" width="110" height="44" rx="8" fill="#16486b"/><text x="662" y="234">Claude</text>
+  </g>
+  <g transform="translate(900,60)" stroke="#5cc8ff" stroke-width="4" fill="none" stroke-linecap="round">
+    <line x1="0" y1="0" x2="0" y2="180"/>
+    <line x1="240" y1="0" x2="240" y2="180"/>
+    <line x1="0" y1="60" x2="60" y2="60"/><line x1="60" y1="40" x2="60" y2="80"/><line x1="80" y1="40" x2="80" y2="80"/>
+    <line x1="80" y1="60" x2="140" y2="60"/><line x1="140" y1="40" x2="140" y2="80"/><line x1="160" y1="40" x2="160" y2="80"/><line x1="140" y1="80" x2="160" y2="40"/>
+    <line x1="160" y1="60" x2="190" y2="60"/><path d="M190 40 a20 20 0 0 1 0 40"/><path d="M210 40 a20 20 0 0 0 0 40"/>
+    <line x1="210" y1="60" x2="240" y2="60"/>
+    <line x1="0" y1="130" x2="100" y2="130"/><rect x="100" y="110" width="60" height="40"/><line x1="160" y1="130" x2="240" y2="130"/>
+  </g>
+</svg>

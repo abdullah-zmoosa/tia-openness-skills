@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Synthetic test block: STL  A "Start" / = "Lamp" -->
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <Name>FC_StlDemo</Name>
+      <Number>2</Number>
+      <ProgrammingLanguage>STL</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StatementList xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StatementList/v5">
+  <StlStatement><StlToken Text="A" /><Access Scope="GlobalVariable"><Symbol><Component Name="Start" /></Symbol></Access></StlStatement>
+  <StlStatement><StlToken Text="=" /><Access Scope="GlobalVariable"><Symbol><Component Name="Lamp" /></Symbol></Access></StlStatement>
+</StatementList></NetworkSource>
+          <ProgrammingLanguage>STL</ProgrammingLanguage>
+        </AttributeList>
+      </SW.Blocks.CompileUnit>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

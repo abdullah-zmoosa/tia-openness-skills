@@ -1,0 +1,13 @@
+{
+  "name": "tia-openness",
+  "version": "1.0.0",
+  "description": "Read, review, compare and (on request) edit Siemens TIA Portal projects via TIA Openness: blocks, tags, HMI, hardware.",
+  "author": {
+    "name": "abdullah-zmoosa"
+  },
+  "homepage": "https://github.com/abdullah-zmoosa/tia-openness-skills",
+  "repository": "https://github.com/abdullah-zmoosa/tia-openness-skills",
+  "license": "MIT",
+  "skills": "./skills/",
+  "keywords": ["siemens", "tia-portal", "openness", "plc", "s7-1500", "scl", "ladder", "simaticml", "wincc"]
+}
