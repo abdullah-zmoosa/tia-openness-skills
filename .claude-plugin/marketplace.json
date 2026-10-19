@@ -1,0 +1,13 @@
+{
+  "name": "tia-openness-skills",
+  "owner": {
+    "name": "abdullah-zmoosa"
+  },
+  "plugins": [
+    {
+      "name": "tia-openness",
+      "source": "./",
+      "description": "Read, review, compare and (on request) edit Siemens TIA Portal projects via TIA Openness."
+    }
+  ]
+}
