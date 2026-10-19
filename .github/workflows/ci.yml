@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  offline-tests:
+    # TIA Portal isn't available on hosted runners: these checks need no TIA.
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Python renderer tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Static PowerShell checks (Windows PowerShell 5.1)
+        shell: powershell
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File tests\test_static.ps1
+
+      - name: Plugin manifests are valid JSON
+        shell: pwsh
+        run: |
+          Get-Content .claude-plugin/plugin.json -Raw | ConvertFrom-Json | Out-Null
+          Get-Content .claude-plugin/marketplace.json -Raw | ConvertFrom-Json | Out-Null
+          Get-Content plugin.json -Raw | ConvertFrom-Json | Out-Null
