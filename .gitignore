@@ -1,0 +1,18 @@
+# Never commit PLC projects, archives or exports
+*.ap1[0-9]
+*.ap2[0-9]
+*.zap1[0-9]
+*.zap2[0-9]
+*.al1[0-9]
+*.al2[0-9]
+TIA_Exports/
+TIA_Work/
+*.aml
+*.zip
+
+# Python / editors
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+*.log
