@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Synthetic test block: network 1 = "Start" AND NOT "Stop" -> "Motor"; network 2 = empty -->
+<Document>
+  <Engineering version="V20" />
+  <DocumentInfo>
+    <Created>2026-01-01T00:00:00Z</Created>
+  </DocumentInfo>
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <Name>FC_Demo</Name>
+      <Number>1</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21"><Symbol><Component Name="Start" /></Symbol></Access>
+    <Access Scope="GlobalVariable" UId="22"><Symbol><Component Name="Stop" /></Symbol></Access>
+    <Access Scope="GlobalVariable" UId="23"><Symbol><Component Name="Motor" /></Symbol></Access>
+    <Part Name="Contact" UId="24" />
+    <Part Name="Contact" UId="25"><Negated Name="operand" /></Part>
+    <Part Name="Coil" UId="26" />
+  </Parts>
+  <Wires>
+    <Wire UId="27"><Powerrail /><NameCon UId="24" Name="in" /></Wire>
+    <Wire UId="28"><IdentCon UId="21" /><NameCon UId="24" Name="operand" /></Wire>
+    <Wire UId="29"><NameCon UId="24" Name="out" /><NameCon UId="25" Name="in" /></Wire>
+    <Wire UId="30"><IdentCon UId="22" /><NameCon UId="25" Name="operand" /></Wire>
+    <Wire UId="31"><NameCon UId="25" Name="out" /><NameCon UId="26" Name="in" /></Wire>
+    <Wire UId="32"><IdentCon UId="23" /><NameCon UId="26" Name="operand" /></Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList><Culture>en-GB</Culture><Text>Motor run</Text></AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="6" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+      </SW.Blocks.CompileUnit>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>
